@@ -15,26 +15,26 @@ The Snake Game follows the classic mode design:
 - The snake wraps around board boundaries (no hard walls).
 
 🛠️ Features Implemented:
-Core Game Mechanics:
-- Input Handling – Non-blocking keyboard input using MacUILib_hasChar() and MacUILib_getChar().
-- Board Rendering – ASCII grid with borders (#), snake body (*), and food (@).
-- Snake Movement – Based on a finite-state machine (FSM), with support for wraparound at edges.
-- Food Generation – Randomly generated at unoccupied cells.
-- Scoring System – Tracks length-based score via snake body size.
-- End-Game Condition – Triggered when the snake collides with itself.
+- Core Game Mechanics:
+  - Input Handling – Non-blocking keyboard input using MacUILib_hasChar() and MacUILib_getChar().
+  - Board Rendering – ASCII grid with borders (#), snake body (*), and food (@).
+  - Snake Movement – Based on a finite-state machine (FSM), with support for wraparound at edges.
+  - Food Generation – Randomly generated at unoccupied cells.
+  - Scoring System – Tracks length-based score via snake body size.
+  - End-Game Condition – Triggered when the snake collides with itself.
 
-Object-Oriented Design:
-- objPos Class – Encapsulates an x-y coordinate and symbol.
-- objPosArrayList Class – Custom array-based list for storing sequences of positions.
-  - Used to represent the snake body as a dynamic list of segments.
-- Player Class – Handles snake movement, growth, and collision detection.
-- GameMechs Class – Manages input, game state (score, exit/lose flags), and board size.
-- Food Handling – Integrated into the game mechanics (single food object).
+- Object-Oriented Design:
+  - objPos Class – Encapsulates an x-y coordinate and symbol.
+  - objPosArrayList Class – Custom array-based list for storing sequences of positions.
+    - Used to represent the snake body as a dynamic list of segments.
+  - Player Class – Handles snake movement, growth, and collision detection.
+  - GameMechs Class – Manages input, game state (score, exit/lose flags), and board size.
+  - Food Handling – Integrated into the game mechanics (single food object).
 
-Development Practices:
-- Implemented Rule of Six / Minimum Four in classes to ensure safe memory handling.
-- Followed incremental testing – validated objPos and objPosArrayList independently before integration.
-- Verified memory management using platform-specific profilers (Valgrind / Dr. Memory).
+- Development Practices:
+  - Implemented Rule of Six / Minimum Four in classes to ensure safe memory handling.
+  - Followed incremental testing – validated objPos and objPosArrayList independently before integration.
+  - Verified memory management using platform-specific profilers (Valgrind / Dr. Memory).
 
 👥 Team Notes:
 - This was a group project (2 members) completed for COMPENG 2SH4.
