@@ -41,5 +41,5 @@ Development Practices:
 - All mandatory features were implemented and validated against the project rubric.
 
 📜 Acknowledgements:
-Course: COMPENG 2SH4 – Principles of Programming (Fall 2024).
-Instructor & TAs for providing skeleton code, MacUILib, and project guidance.
+- Course: COMPENG 2SH4 – Principles of Programming (Fall 2024).
+- Instructor & TAs for providing skeleton code, MacUILib, and project guidance.
